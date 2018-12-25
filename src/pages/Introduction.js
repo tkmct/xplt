@@ -26,7 +26,6 @@ const styles = StyleSheet.create({
   },
   body: {
     flex: 6,
-    justifyContent: 'flex-start',
     flexDirection: Platform.OS === 'dom' ? 'row' : 'column'
   },
   left: {

@@ -5,19 +5,18 @@ import { View, Text, Image, StyleSheet, Platform } from 'react-native'
 
 const imageSize = Platform.OS === 'dom' ? 500 : 240;
 
-export default ({ handlePageChange }) => <Layout onNext={() => handlePageChange('xplatform')} onPrevious={() => handlePageChange('intro')}>
+export default ({ handlePageChange }) => <Layout onNext={() => handlePageChange('demo')} onPrevious={() => handlePageChange('appDev')}>
   <View style={styles.titleContainer}>
-    <H2>クライアントサイドアプリケーション開発</H2>
+    <H2>クロスプラットフォーム開発</H2>
   </View>
   <View style={styles.body}>
     <View style={styles.left}>
-      <Image source={require('../images/PlatformSpecific.jpg')} style={{ width: imageSize, height: imageSize, resizeMode: 'contain' }} />
+      <Image source={require('../images/XPlatform.jpg')} style={{ width: imageSize, height: imageSize, resizeMode: 'contain' }} />
     </View>
     <View>
-      <P>• マルチプラットフォーム</P>
-      <P>• 異なるコードベース</P>
-      <P>• 開発コスト ・ メンテナンスコスト x プラットフォーム数</P>
-      <P>• 開発者確保 x プラットフォーム数</P>
+      <P>• 一つのコードベース</P>
+      <P>• 開発コストの削減</P>
+      <P>• 開発者の確保が容易(だと思う)</P>
     </View>
   </View>
 </Layout>
