@@ -17,11 +17,15 @@ export default class Layout extends React.Component {
   }
 
   render () {
-    const { children, onNext, onPrevious } = this.props;
+    const { children, onNext, onPrevious, direction } = this.props;
     const { fadeAnimation } = this.state;
 
+    const directionStyle = {
+      flexDirection: direction || 'column'
+    }
+
     return <TouchableWithoutFeedback onPress={onNext} onLongPress={onPrevious}>
-      <Animated.View style={{ ...style.container, opacity: fadeAnimation }}>{children}</Animated.View>
+      <Animated.View style={{ ...style.container, ...directionStyle, opacity: fadeAnimation }}>{children}</Animated.View>
     </TouchableWithoutFeedback>
   }
 } 

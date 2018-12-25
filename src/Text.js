@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text, StyleSheet, Platform } from 'react-native'
 
-const base = Platform.OS === 'dom' ? 1.5 : 1
+const base = Platform.OS === 'dom' ? 1.8 : 1.2
 
 const styles = StyleSheet.create({
   h1: {

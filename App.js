@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
-import { TitlePage, Introduction, End, Demo } from './src/pages';
+import { TitlePage, Introduction, End, Demo, AppDev } from './src/pages';
 
 const pages = {
   title: TitlePage,
   intro: Introduction,
   end: End,
-  demo: Demo
+  demo: Demo,
+  appDev: AppDev
 }
 
 type Props = {};
