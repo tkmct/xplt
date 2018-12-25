@@ -5,18 +5,17 @@ import { View, Text, Image, StyleSheet, Platform } from 'react-native'
 
 const imageSize = Platform.OS === 'dom' ? 500 : 240;
 
-export default ({ handlePageChange }) => <Layout onNext={() => handlePageChange('hybrid')} onPrevious={() => handlePageChange('appDev')}>
+export default ({ handlePageChange }) => <Layout onNext={() => handlePageChange('reactNative')} onPrevious={() => handlePageChange('hybrid')}>
   <View style={styles.titleContainer}>
-    <H2>クロスプラットフォーム開発</H2>
+    <H2>課題を解決するために</H2>
   </View>
   <View style={styles.body}>
-    <View style={styles.left}>
-      <Image source={require('../images/XPlatform.jpg')} style={{ width: imageSize, height: imageSize, resizeMode: 'contain' }} />
-    </View>
     <View>
-      <P>• 一つのコードベース</P>
-      <P>• 開発コストの削減</P>
-      <P>• 開発者の確保が容易(だと思う)</P>
+      <P>ネイティブのUIをレンダリングできるようにする + 独自Layoutエンジン上で動かすことでハイパフォーマンスを目指すように</P>
+      <View style={{ marginBottom: 30 }}></View>
+      <P>• ReactNative (yoga)</P>
+      <P>• Xamarin</P>
+      <P>• Flutter (skia)</P>
     </View>
   </View>
 </Layout>

@@ -15,6 +15,7 @@ const styles = StyleSheet.create({
     color: 'grey'
   },
   p: {
+    marginBottom: 10,
     fontSize: 14 * base,
     fontWeight: '400',
     color: 'grey'

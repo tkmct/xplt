@@ -1,5 +1,17 @@
 import React, {Component} from 'react';
-import { TitlePage, Introduction, End, Demo, AppDev, XPlatform } from './src/pages';
+import { 
+  TitlePage,
+  Introduction,
+  End,
+  Demo,
+  AppDev,
+  XPlatform,
+  Hybrid,
+  ReactNative,
+  Flutter,
+  After,
+  BeyondHybrid
+} from './src/pages';
 
 const pages = {
   title: TitlePage,
@@ -7,7 +19,12 @@ const pages = {
   end: End,
   demo: Demo,
   appDev: AppDev,
-  xplatform: XPlatform
+  xplatform: XPlatform,
+  hybrid: Hybrid,
+  reactNative: ReactNative,
+  flutter: Flutter,
+  after: After,
+  beyondHybrid: BeyondHybrid
 }
 
 type Props = {};
