@@ -1,18 +1,11 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
-import { TitlePage, Introduction } from './src/pages';
+import { TitlePage, Introduction, End, Demo } from './src/pages';
 
 const pages = {
   title: TitlePage,
-  intro: Introduction
+  intro: Introduction,
+  end: End,
+  demo: Demo
 }
 
 type Props = {};

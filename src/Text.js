@@ -1,19 +1,21 @@
 import React from 'react'
-import { Text, StyleSheet } from 'react-native'
+import { Text, StyleSheet, Platform } from 'react-native'
+
+const base = Platform.OS === 'dom' ? 1.5 : 1
 
 const styles = StyleSheet.create({
   h1: {
-    fontSize: 38,
+    fontSize: 30 * base,
     fontWeight: 'bold',
     color: 'grey'
   },
   h2: {
-    fontSize: 30,
+    fontSize: 24 * base,
     fontWeight: '600',
     color: 'grey'
   },
   p: {
-    fontSize: 24,
+    fontSize: 14 * base,
     fontWeight: '400',
     color: 'grey'
   }
